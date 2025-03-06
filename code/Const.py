@@ -12,10 +12,10 @@ ENTITY_SPEED = {
     'Lvl1BG2': 2,
     'Lvl1BG3': 4,
     'Lvl1BG4': 8,
-    'Lvl1BG5': 20,
-    'Lvl1BG6': 30,
-    'Lvl1BG7': 40,
-    'Lvl1BG8': 50,
+    'Lvl1BG5': 10,
+    'Lvl1BG6': 12,
+    'Lvl1BG7': 15,
+    'Lvl1BG8': 18,
 }
 
 #M
@@ -26,5 +26,5 @@ MENU_OPTION = ('NEW GAME 1P',
                'EXIT')
 
 #W
-WIN_WIDTH = 980
-WIN_HEIGHT = 551
+WIN_WIDTH = 720
+WIN_HEIGHT = 405
