@@ -4,15 +4,16 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, COLOR_WHITE, C_GRAY, C_ORANGE, C_BBLUE, MENU_OPTION, C_YELLOW
+from code.Const import WIN_WIDTH, COLOR_WHITE, C_BBLUE, MENU_OPTION, C_YELLOW
 
 
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/MenuBg.png')
+        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
         self.rect = self.surf.get_rect()
 
+    @property
     def run(self, ):
         menu_option = 0
         pygame.mixer_music.load('./asset/MenuFKA.mp3')
@@ -41,19 +42,19 @@ class Menu:
                     quit()  # End Pygame
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_DOWN: # Down Key
+                    if event.key == pygame.K_DOWN:  # Down Key
                         if menu_option < len(MENU_OPTION) - 1:
                             menu_option += 1
                         else:
                             menu_option = 0
 
-                    if event.key == pygame.K_UP: # Up Key
+                    if event.key == pygame.K_UP:  # Up Key
                         if menu_option > 0:
                             menu_option -= 1
                         else:
-                            menu_option = len(MENU_OPTION) -1
+                            menu_option = len(MENU_OPTION) - 1
 
-                    if event.key == pygame.K_RETURN: #Enter
+                    if event.key == pygame.K_RETURN:  # Enter
                         return MENU_OPTION[menu_option]
 
 

@@ -9,13 +9,13 @@ C_YELLOW = (253, 245, 12)
 ENTITY_SPEED = {
     'Lvl1BG0': 0,
     'Lvl1BG1': 0.5,
-    'Lvl1BG2': 2,
-    'Lvl1BG3': 4,
-    'Lvl1BG4': 8,
-    'Lvl1BG5': 10,
-    'Lvl1BG6': 12,
-    'Lvl1BG7': 15,
-    'Lvl1BG8': 18,
+    'Lvl1BG2': 1,
+    'Lvl1BG3': 2,
+    'Lvl1BG4': 3,
+    'Lvl1BG5': 4,
+    'Lvl1BG6': 5,
+    'Lvl1BG7': 6,
+    'Lvl1BG8': 8,
 }
 
 #M
