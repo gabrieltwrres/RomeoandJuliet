@@ -25,6 +25,12 @@ ENTITY_SPEED = {
     'Lvl2BG1': 1,
     'Lvl2BG2': 2,
     'Lvl2BG3': 3,
+    'Lvl3BG0': 0,
+    'Lvl3BG1': 0.5,
+    'Lvl3BG2': 1,
+    'Lvl3BG3': 2,
+    'Lvl3BG4': 3,
+    'Lvl3BG5': 4,
     'Player1': 3,
     'Player1Shot': 4,
     'Player2': 3,
@@ -49,6 +55,12 @@ ENTITY_HEALTH = {
     'Lvl2BG1': 999,
     'Lvl2BG2': 999,
     'Lvl2BG3': 999,
+    'Lvl3BG0': 999,
+    'Lvl3BG1': 999,
+    'Lvl3BG2': 999,
+    'Lvl3BG3': 999,
+    'Lvl3BG4': 999,
+    'Lvl3BG5': 999,
     'Player1': 300,
     'Player2': 300,
     'Player1Shot': 1,
@@ -74,6 +86,12 @@ ENTITY_DEMAGE = {
     'Lvl2BG1': 0,
     'Lvl2BG2': 0,
     'Lvl2BG3': 0,
+    'Lvl3BG0': 0,
+    'Lvl3BG1': 0,
+    'Lvl3BG2': 0,
+    'Lvl3BG3': 0,
+    'Lvl3BG4': 0,
+    'Lvl3BG5': 0,
     'Player1': 1,
     'Player2': 1,
     'Player1Shot': 25,
@@ -99,6 +117,12 @@ ENTITY_SCORE = {
     'Lvl2BG1': 0,
     'Lvl2BG2': 0,
     'Lvl2BG3': 0,
+    'Lvl3BG0': 0,
+    'Lvl3BG1': 0,
+    'Lvl3BG2': 0,
+    'Lvl3BG3': 0,
+    'Lvl3BG4': 0,
+    'Lvl3BG5': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -139,7 +163,7 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 50000
+TIMEOUT_LEVEL = 60000
 
 # W
 WIN_WIDTH = 720
@@ -162,4 +186,5 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              7: (WIN_WIDTH / 2, 250),
              8: (WIN_WIDTH / 2, 270),
              9: (WIN_WIDTH / 2, 290),
+
              }
