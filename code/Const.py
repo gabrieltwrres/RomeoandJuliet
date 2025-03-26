@@ -31,6 +31,18 @@ ENTITY_SPEED = {
     'Lvl3BG3': 2,
     'Lvl3BG4': 3,
     'Lvl3BG5': 4,
+    'Lvl4BG0': 0,
+    'Lvl4BG1': 0.5,
+    'Lvl4BG2': 1,
+    'Lvl4BG3': 2,
+    'Lvl4BG4': 3,
+    'Lvl4BG5': 4,
+    'Lvl5BG0': 0,
+    'Lvl5BG1': 0.5,
+    'Lvl5BG2': 1,
+    'Lvl5BG3': 2,
+    'Lvl5BG4': 3,
+    'Lvl5BG5': 4,
     'Player1': 3,
     'Player1Shot': 4,
     'Player2': 3,
@@ -61,11 +73,23 @@ ENTITY_HEALTH = {
     'Lvl3BG3': 999,
     'Lvl3BG4': 999,
     'Lvl3BG5': 999,
+    'Lvl4BG0': 999,
+    'Lvl4BG1': 999,
+    'Lvl4BG2': 999,
+    'Lvl4BG3': 999,
+    'Lvl4BG4': 999,
+    'Lvl4BG5': 999,
+    'Lvl5BG0': 999,
+    'Lvl5BG1': 999,
+    'Lvl5BG2': 999,
+    'Lvl5BG3': 999,
+    'Lvl5BG4': 999,
+    'Lvl5BG5': 999,
     'Player1': 300,
     'Player2': 300,
     'Player1Shot': 1,
     'Player2Shot': 1,
-    'Enemy1' : 50,
+    'Enemy1': 50,
     'Enemy2': 60,
     'Enemy1Shot': 1,
     'Enemy2Shot': 1
@@ -92,11 +116,23 @@ ENTITY_DEMAGE = {
     'Lvl3BG3': 0,
     'Lvl3BG4': 0,
     'Lvl3BG5': 0,
+    'Lvl4BG0': 0,
+    'Lvl4BG1': 0,
+    'Lvl4BG2': 0,
+    'Lvl4BG3': 0,
+    'Lvl4BG4': 0,
+    'Lvl4BG5': 0,
+    'Lvl5BG0': 0,
+    'Lvl5BG1': 0,
+    'Lvl5BG2': 0,
+    'Lvl5BG3': 0,
+    'Lvl5BG4': 0,
+    'Lvl5BG5': 0,
     'Player1': 1,
     'Player2': 1,
     'Player1Shot': 25,
     'Player2Shot': 25,
-    'Enemy1' : 1,
+    'Enemy1': 1,
     'Enemy2': 1,
     'Enemy1Shot': 20,
     'Enemy2Shot': 15
@@ -123,6 +159,18 @@ ENTITY_SCORE = {
     'Lvl3BG3': 0,
     'Lvl3BG4': 0,
     'Lvl3BG5': 0,
+    'Lvl4BG0': 0,
+    'Lvl4BG1': 0,
+    'Lvl4BG2': 0,
+    'Lvl4BG3': 0,
+    'Lvl4BG4': 0,
+    'Lvl4BG5': 0,
+    'Lvl5BG0': 0,
+    'Lvl5BG1': 0,
+    'Lvl5BG2': 0,
+    'Lvl5BG3': 0,
+    'Lvl5BG4': 0,
+    'Lvl5BG5': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -160,16 +208,15 @@ PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 
-
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 60000
+TIMEOUT_LEVEL = 20000
 
 # W
 WIN_WIDTH = 720
 WIN_HEIGHT = 405
 
-#S
+# S
 SPAWN_TIME = 4000
 
 SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),

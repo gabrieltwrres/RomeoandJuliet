@@ -31,6 +31,18 @@ class EntityFactory:
                     list_bg.append(Background(f'Lvl3BG{i}', (0, 0)))
                     list_bg.append(Background(f'Lvl3BG{i}', (WIN_WIDTH, 0)))
                 return list_bg
+            case 'Lvl4BG':
+                list_bg = []
+                for i in range(6):
+                    list_bg.append(Background(f'Lvl4BG{i}', (0, 0)))
+                    list_bg.append(Background(f'Lvl4BG{i}', (WIN_WIDTH, 0)))
+                return list_bg
+            case 'Lvl5BG':
+                list_bg = []
+                for i in range(6):
+                    list_bg.append(Background(f'Lvl5BG{i}', (0, 0)))
+                    list_bg.append(Background(f'Lvl5BG{i}', (WIN_WIDTH, 0)))
+                return list_bg
             case 'Player1':
                 return Player('Player1', (10, WIN_HEIGHT / 2 - 30))
             case 'Player2':
