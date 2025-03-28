@@ -22,7 +22,7 @@ class Menu:
         while True:
             #Draw Images
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_logo(50, "Vaiser", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
+            self.menu_logo(50, "Visser", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
             self.menu_logo(50, "To Down", COLOR_WHITE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
