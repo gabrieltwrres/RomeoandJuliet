@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pygame
+import time
 
 from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 from code.Level import Level
@@ -13,6 +14,47 @@ class Game:
     def __init__(self):
         pygame.init()
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
+
+        # Carregar imagem e som de Game Over
+        self.game_over_img = pygame.image.load("./asset/game_over.jpg")
+        self.game_over_sound = pygame.mixer.Sound("./asset/game_over.mp3")
+
+        # # Carregar imagens de início de fase
+        # self.level_images = {
+        #     'Lvl1': pygame.image.load("level1.png"),
+        #     'Lvl2': pygame.image.load("level2.png"),
+        #     'Lvl3': pygame.image.load("level3.png"),
+        #     'Lvl4': pygame.image.load("level4.png"),
+        #     'Lvl5': pygame.image.load("level5.png"),
+        # }
+
+    def show_game_over(self):
+        """Exibe a tela de Game Over e toca um som."""
+        self.window.fill((0, 0, 0))  # Preenche a tela de preto
+        self.window.blit(self.game_over_img,
+                         (WIN_WIDTH // 2 - self.game_over_img.get_width() // 2,
+                          WIN_HEIGHT // 2 - self.game_over_img.get_height() // 2))
+        pygame.display.flip()
+
+        # Para qualquer música e som em execução
+        pygame.mixer_music.stop()
+        pygame.mixer.stop()
+
+        # Toca o som de game over
+        self.game_over_sound.play()
+
+        # Espera 10 segundos antes de voltar ao menu
+        time.sleep(10)
+
+        # def show_level_start(self, level_name):
+        #     """Exibe uma tela de início da fase."""
+        #     if level_name in self.level_images:
+        #         self.window.fill((0, 0, 0))  # Preenche a tela de preto
+        #         self.window.blit(self.level_images[level_name],
+        #                          (WIN_WIDTH // 2 - self.level_images[level_name].get_width() // 2,
+        #                           WIN_HEIGHT // 2 - self.level_images[level_name].get_height() // 2))
+        #         pygame.display.flip()
+        #         time.sleep(2)  # Exibe a tela por 2 segundos
 
     def run(self, ):
         while True:
@@ -39,6 +81,10 @@ class Game:
                         if level_return:
                             score.save(menu_return, player_score)
 
+                # Se o jogador perder, exibe Game Over antes de voltar ao menu
+                if not level_return:
+                    self.show_game_over()
+
 
             elif menu_return == MENU_OPTION[3]:
                 score.show()
@@ -47,4 +93,5 @@ class Game:
                 quit() #End pygame
             else:
                 pass
+
 

@@ -36,7 +36,7 @@ class Level:
 
     def run(self, player_score: list[int]):
         pygame.mixer_music.load(f'./asset/{self.name}.mp3')
-        pygame.mixer_music.play(-1)
+        pygame.mixer_music.play()
         clock = pygame.time.Clock()
         while True:
             clock.tick(60)
