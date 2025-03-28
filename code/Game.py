@@ -54,7 +54,7 @@ class Game:
                              (WIN_WIDTH // 2 - self.level_images[level_name].get_width() // 2,
                               WIN_HEIGHT // 2 - self.level_images[level_name].get_height() // 2))
             pygame.display.flip()
-            time.sleep(5)  # Exibe a tela por 2 segundos
+            time.sleep(5)  # Exibe a tela por 5 segundos
 
     def run(self, ):
         while True:
