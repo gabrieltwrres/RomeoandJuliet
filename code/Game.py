@@ -54,7 +54,7 @@ class Game:
                              (WIN_WIDTH // 2 - self.level_images[level_name].get_width() // 2,
                               WIN_HEIGHT // 2 - self.level_images[level_name].get_height() // 2))
             pygame.display.flip()
-            time.sleep(2)  # Exibe a tela por 2 segundos
+            time.sleep(5)  # Exibe a tela por 2 segundos
 
     def run(self, ):
         while True:
@@ -84,8 +84,6 @@ class Game:
                         level = Level(self.window, 'Lvl5', menu_return, player_score)
                         level_return = level.run(player_score)
                         if level_return:
-                            self.show_level_start('Lvl5')
-                            self.show_level_start('Lvl5')
                             score.save(menu_return, player_score)
 
                 # Se o jogador perder, exibe Game Over antes de voltar ao menu
